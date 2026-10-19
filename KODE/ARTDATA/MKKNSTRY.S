@@ -1,0 +1,114 @@
+	opt	c+
+l19	group
+	xdef	storykn_module
+	xref	BLACK_p
+	xref	RED_p
+	xref	SCORE_P
+	xref	WHITE_p
+	xref	baklst0
+	xref	baklst1
+	xref	baklst1_t
+	xref	baklst2
+	xref	baklst2_t
+	xref	baklst3
+	xref	baklst3_t
+	xref	baklst4
+	xref	baklst4_t
+	xref	baklst5
+	xref	baklst5_t
+	xref	baklst6
+	xref	baklst6_t
+	xref	baklst7
+	xref	baklst7_t
+	xref	baklst8
+	xref	baklst8_t
+	xref	baklst9
+	xref	bakmods
+	xref	bpal_black_P
+	xref	bpal_blue_P
+	xref	bpal_flash1_P
+	xref	bpal_flash2_P
+	xref	bpal_flash3_P
+	xref	bpal_red_P
+	xref	bpal_white_P
+	xref	calla_return
+	xref	check_only_t
+	xref	dlists_buyin
+	xref	floor_code
+	xref	no_scroll
+	xref	objlst
+	xref	objlst2
+	xref	objlst_t
+	xref	scrollx
+	xref	scrollx1
+	xref	scrollx2
+	xref	scrollx3
+	xref	scrollx4
+	xref	scrollx5
+	xref	scrollx6
+	xref	scrollx7
+	xref	scrollx8
+	xref	shadow_p1p2
+	xref	skew_7
+	xref	use_next_y
+	xref	use_worldtly
+	xref	use_worldtly_t
+	xref	worldtlx
+	xref	worldtlx1
+	xref	worldtlx1_t
+	xref	worldtlx2
+	xref	worldtlx2_t
+	xref	worldtlx3
+	xref	worldtlx3_t
+	xref	worldtlx4
+	xref	worldtlx4_t
+	xref	worldtlx5
+	xref	worldtlx5_t
+	xref	worldtlx6
+	xref	worldtlx6_t
+	xref	worldtlx7
+	xref	worldtlx7_t
+	xref	worldtlx8
+	xref	worldtlx8_t
+	xref	worldtlx_t
+	xref	worldtly
+	xref	worldtly1
+	xref	worldtly2
+	xref	worldtly3
+	xref	worldtly4
+	xref	worldtly5
+	xref	worldtly6
+	xref	worldtly7
+	xref	worldtly8
+	section	.bkgddata_l19
+L0_0
+	dw	L0_c
+	dw	L0_4c
+	dw	L0_250
+L0_c
+	incbin	"c:\tmp\retail\ATTRACT\MKKNSTRY.OVL",12,62
+	dsb	2
+L0_4c
+	incbin	"c:\tmp\retail\ATTRACT\MKKNSTRY.OVL",76,516
+L0_250
+	incbin	"c:\tmp\retail\ATTRACT\MKKNSTRY.OVL",592,36
+L0_274
+	incbin	"c:\tmp\retail\ATTRACT\MKKNSTRY.OVL",628,8
+	dw	L0_288
+	dw	L0_410
+	dw	L0_0
+L0_288
+	incbin	"c:\tmp\retail\ATTRACT\MKKNSTRY.OVL",648,390
+	dsb	2
+L0_410
+	incbin	"c:\tmp\retail\ATTRACT\MKKNSTRY.OVL",1040,70
+	dsb	2
+storykn_module
+	incbin	"c:\tmp\retail\ATTRACT\MKKNSTRY.OVL",1112,12
+	dw	calla_return
+	dw	no_scroll
+	dw	dlists_buyin
+	dw	bakmods
+	dw	L0_274
+	incbin	"c:\tmp\retail\ATTRACT\MKKNSTRY.OVL",1144,12
+	end

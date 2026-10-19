@@ -1,0 +1,154 @@
+	opt	c+
+BLOOD	group
+	xdef	BIGBLD1
+	xdef	STAB1
+	xdef	a_bigger
+	xdef	a_decap_spray
+	xdef	a_drip
+	xdef	a_drip_splat
+	xdef	a_face_blood
+	xdef	a_rotate_12
+	xdef	a_rotate_7
+	xdef	a_rotate_9
+	xdef	a_rotate_standard
+	xdef	a_skinny_blood
+	xdef	blood_anims
+	xref	BLACK_p
+	xref	BLDXPD_P
+	xref	BLOOD_P
+	xref	BODY_P
+	xref	CAGE_P
+	xref	GBODY_P
+	xref	RED_p
+	xref	SCORE_P
+	xref	SMDRIP_P
+	xref	WHITE_p
+	xref	bpal_black_P
+	xref	bpal_blue_P
+	xref	bpal_flash1_P
+	xref	bpal_flash2_P
+	xref	bpal_flash3_P
+	xref	bpal_red_P
+	xref	bpal_white_P
+	section	.blooddata
+blood_anims
+a_face_blood
+	incbin	"c:\tmp\retail\MK3.EXE",584716,32
+a_decap_spray
+	incbin	"c:\tmp\retail\MK3.EXE",584748,52
+a_skinny_blood
+	incbin	"c:\tmp\retail\MK3.EXE",584800,48
+a_bigger
+	incbin	"c:\tmp\retail\MK3.EXE",584848,36
+a_drip
+	incbin	"c:\tmp\retail\MK3.EXE",584884,20
+a_drip_splat
+	incbin	"c:\tmp\retail\MK3.EXE",584904,16
+a_rotate_12
+	incbin	"c:\tmp\retail\MK3.EXE",584920,12
+a_rotate_standard
+	incbin	"c:\tmp\retail\MK3.EXE",584932,8
+a_rotate_9
+	incbin	"c:\tmp\retail\MK3.EXE",584940,12
+a_rotate_7
+	incbin	"c:\tmp\retail\MK3.EXE",584952,404
+STAB1
+	incbin	"c:\tmp\retail\MK3.EXE",585356,12
+	dw	BLOOD_P
+BIGBLD1
+	incbin	"c:\tmp\retail\MK3.EXE",585372,12
+	dw	BLOOD_P
+	incbin	"c:\tmp\retail\MK3.EXE",585388,156
+	dw	SMDRIP_P
+	incbin	"c:\tmp\retail\MK3.EXE",585548,12
+	dw	SMDRIP_P
+	incbin	"c:\tmp\retail\MK3.EXE",585564,12
+	dw	SMDRIP_P
+	incbin	"c:\tmp\retail\MK3.EXE",585580,12
+	dw	SMDRIP_P
+	incbin	"c:\tmp\retail\MK3.EXE",585596,12
+	dw	SMDRIP_P
+	incbin	"c:\tmp\retail\MK3.EXE",585612,12
+	dw	SMDRIP_P
+	incbin	"c:\tmp\retail\MK3.EXE",585628,12
+	dw	SMDRIP_P
+	incbin	"c:\tmp\retail\MK3.EXE",585644,12
+	dw	SMDRIP_P
+	incbin	"c:\tmp\retail\MK3.EXE",585660,12
+	dw	SMDRIP_P
+	incbin	"c:\tmp\retail\MK3.EXE",585676,22
+	dsb	2
+	incbin	"c:\tmp\retail\MK3.EXE",585700,34
+	dsb	2
+	incbin	"c:\tmp\retail\MK3.EXE",585736,46
+	dsb	2
+	incbin	"c:\tmp\retail\MK3.EXE",585784,46
+	dsb	2
+	incbin	"c:\tmp\retail\MK3.EXE",585832,46
+	dsb	2
+	incbin	"c:\tmp\retail\MK3.EXE",585880,46
+	dsb	2
+	incbin	"c:\tmp\retail\MK3.EXE",585928,46
+	dsb	2
+	incbin	"c:\tmp\retail\MK3.EXE",585976,49
+	dsb	3
+	incbin	"c:\tmp\retail\MK3.EXE",586028,43
+	dsb	1
+	incbin	"c:\tmp\retail\MK3.EXE",586072,70
+	dsb	2
+	incbin	"c:\tmp\retail\MK3.EXE",586144,133
+	dsb	3
+	incbin	"c:\tmp\retail\MK3.EXE",586280,190
+	dsb	2
+	incbin	"c:\tmp\retail\MK3.EXE",586472,175
+	dsb	1
+	incbin	"c:\tmp\retail\MK3.EXE",586648,199
+	dsb	1
+	incbin	"c:\tmp\retail\MK3.EXE",586848,393
+	dsb	3
+	incbin	"c:\tmp\retail\MK3.EXE",587244,97
+	dsb	3
+	incbin	"c:\tmp\retail\MK3.EXE",587344,530
+	dsb	2
+	incbin	"c:\tmp\retail\MK3.EXE",587876,94
+	dsb	2
+	incbin	"c:\tmp\retail\MK3.EXE",587972,85
+	dsb	3
+	incbin	"c:\tmp\retail\MK3.EXE",588060,285
+	dsb	3
+	incbin	"c:\tmp\retail\MK3.EXE",588348,91
+	dsb	1
+	incbin	"c:\tmp\retail\MK3.EXE",588440,94
+	dsb	2
+	incbin	"c:\tmp\retail\MK3.EXE",588536,106
+	dsb	2
+	incbin	"c:\tmp\retail\MK3.EXE",588644,345
+	dsb	3
+	incbin	"c:\tmp\retail\MK3.EXE",588992,133
+	dsb	3
+	incbin	"c:\tmp\retail\MK3.EXE",589128,441
+	dsb	3
+	incbin	"c:\tmp\retail\MK3.EXE",589572,361
+	dsb	3
+	incbin	"c:\tmp\retail\MK3.EXE",589936,475
+	dsb	1
+	incbin	"c:\tmp\retail\MK3.EXE",590412,807
+	dsb	1
+	incbin	"c:\tmp\retail\MK3.EXE",591220,577
+	dsb	3
+	incbin	"c:\tmp\retail\MK3.EXE",591800,454
+	dsb	2
+	incbin	"c:\tmp\retail\MK3.EXE",592256,570
+	dsb	2
+	incbin	"c:\tmp\retail\MK3.EXE",592828,379
+	dsb	1
+	incbin	"c:\tmp\retail\MK3.EXE",593208,553
+	dsb	3
+	incbin	"c:\tmp\retail\MK3.EXE",593764,1763
+	dsb	1
+	incbin	"c:\tmp\retail\MK3.EXE",595528,973
+	dsb	3
+	incbin	"c:\tmp\retail\MK3.EXE",596504,655
+	dsb	1
+	incbin	"c:\tmp\retail\MK3.EXE",597160,46
+	end

@@ -1,0 +1,483 @@
+;
+; Linker control file for: MK3
+;
+
+	;
+	; The following line can be omitted if you specify the org address
+	; on linker command line.
+	;
+
+text	group			; Group containing defined data
+
+;##################################################################################
+	;
+	; Palettes
+	;
+p0	group
+	include "obj\mkpalnts.o"		; overlays written in another file
+	section .text_nts,p0
+
+;##################################################################################
+	;
+	; Misc Groups
+	;
+TABLE group
+BLOOD group
+NAMES group
+STRING group
+EXPLODE group
+
+	section .tabledata,TABLE
+	section .blooddata,BLOOD
+	section	.stringdata,STRING
+	section	.nameschardata,NAMES
+	section	.explodedata,EXPLODE
+
+
+;##################################################################################
+;OVERLAY AREA FOR PLAYER HEAP AND OTHER STUFF  (OVERLAYS OVER PLAYER HEAP)
+main_ovl	group
+;vs_ovl 		group	over(main_ovl),file("overlay\mkvsimg.bin")
+select_ovl 	group	over(main_ovl),file("overlay\mkselvic.bin")
+options_ovl	group	over(main_ovl),file("attract\mkoptions.bin")
+
+	section	.text_main,main_ovl
+;	section	.text_vs,vs_ovl
+	section .text_select,select_ovl
+	section .text_options,options_ovl
+
+;##################################################################################
+
+
+;##################################################################################
+;Fight Intro/Finish Effects
+;;f0	group	file("overlay\mkfight.bin")
+;f1	group	over(f0),file("overlay\mkhim.bin")
+;f2	group	over(f1),file("overlay\mkher.bin")
+;
+;	section	.fightintdata,f0
+;	section	.finhimdata,f1
+;	section	.finherdata,f2
+
+;##################################################################################
+;Level Code/Module overlays
+l0		group	file("bkgds\bkgdsbst.ovl")
+;l1		group	over(l0),file("bkgds\bkgdbank.ovl")
+l2		group	over(l0),file("bkgds\bkgdcity.ovl")
+;l3		group	over(l0),file("bkgds\bkgdbalc.ovl")
+l4		group	over(l0),file("bkgds\bkgdbrig.ovl")
+l5		group	over(l0),file("bkgds\bkgdsoul.ovl")
+l6		group	over(l0),file("bkgds\bkgdbell.ovl")
+l7		group	over(l0),file("bkgds\bkgdtemp.ovl")
+l8		group	over(l0),file("bkgds\bkgdgrav.ovl")
+l9		group	over(l0),file("bkgds\bkgdpit.ovl")
+l10		group	over(l0),file("attract\mkbuydt.ovl")
+;l12		group	over(l0),file("attract\mkladdr.ovl")
+l14		group	over(l0),file("attract\mkcoin.ovl")
+l15		group	over(l0),file("attract\mkpsel.ovl")
+l16		group	over(l0),file("attract\mktitle.ovl")
+l17		group	over(l0),file("attract\mkstry2.ovl")
+l18		group	over(l0),file("attract\mkstry3.ovl")
+l19		group	over(l0),file("attract\mkknstry.ovl")
+l20		group	over(l0),file("attract\mkszstry.ovl")
+l21		group	over(l0),file("attract\mklkstry.ovl")
+l22		group	over(l0),file("bkgds\bkgdport.ovl")
+l23		group	over(l0),file("attract\mkgrad.ovl")
+l24		group	over(l0),file("bkgds\bkgdsken.ovl")
+l25		group	over(l0),file("attract\mkhscore.ovl")
+l26		group	over(l0),file("bkgds\bkgdmock.ovl")
+l27		group	over(l0),file("bkgds\bkgdmark.ovl")
+l28		group	over(l0),file("attract\mkdteam.ovl")
+l29		group	over(l0),file("vs\mkverse.ovl")
+
+	section	.bkgddata_l0,l0
+;	section	.bkgddata_l1,l1
+	section	.bkgddata_l2,l2
+;	section	.bkgddata_l3,l3
+	section	.bkgddata_l4,l4
+	section	.bkgddata_l5,l5
+	section	.bkgddata_l6,l6
+	section	.bkgddata_l7,l7
+	section	.bkgddata_l8,l8
+	section	.bkgddata_l9,l9
+	section	.bkgddata_l10,l10
+;	section	.bkgddata_l12,l12
+	section	.bkgddata_l14,l14
+	section	.bkgddata_l15,l15
+	section	.bkgddata_l16,l16
+	section	.bkgddata_l17,l17
+	section	.bkgddata_l18,l18
+	section	.bkgddata_l19,l19
+	section	.bkgddata_l20,l20
+	section	.bkgddata_l21,l21
+	section	.bkgddata_l22,l22
+	section	.bkgddata_l23,l23
+	section	.bkgddata_l24,l24
+	section	.bkgddata_l25,l25
+	section	.bkgddata_l26,l26
+	section	.bkgddata_l27,l27
+	section	.bkgddata_l28,l28
+	section	.bkgddata_l29,l29
+
+;##################################################################################
+
+;##################################################################################
+;VS Screen Character Data
+vs_c0		group	over(l0),file("vs\vssonya.bin")
+vs_c1		group	over(l0),file("vs\vskano.bin")
+vs_c2		group	over(l0),file("vs\vsindian.bin")
+vs_c3		group	over(l0),file("vs\vsjax.bin")
+vs_c4		group	over(l0),file("vs\vssz.bin")
+vs_c5		group	over(l0),file("vs\vsswat.bin")
+vs_c6		group	over(l0),file("vs\vslia.bin")
+vs_c7		group	over(l0),file("vs\vsrobo1.bin")
+vs_c8		group	over(l0),file("vs\vsrobo2.bin")
+vs_c9  		group	over(l0),file("vs\vslao.bin")
+vs_c10  	group	over(l0),file("vs\vstusk.bin")
+vs_c11  	group	over(l0),file("vs\vssg.bin")
+vs_c12  	group	over(l0),file("vs\vslkang.bin")
+vs_c13  	group	over(l0),file("vs\vsst.bin")
+vs_c14		group	over(l0),file("vs\vsrobo3.bin")
+
+bss	group	bss		; Group containing unuinitialized data
+
+	section	.vs_0,vs_c0
+	section	.vs_1,vs_c1
+	section	.vs_2,vs_c2
+	section	.vs_3,vs_c3
+	section	.vs_4,vs_c4
+	section	.vs_5,vs_c5
+	section	.vs_6,vs_c6
+	section	.vs_7,vs_c7
+	section	.vs_8,vs_c8
+	section	.vs_9,vs_c9
+	section	.vs_10,vs_c10
+	section	.vs_11,vs_c11
+	section	.vs_12,vs_c12
+	section	.vs_13,vs_c13
+	section	.vs_14,vs_c14
+
+;##################################################################################
+
+;##################################################################################
+;Bio overlays (Overlays over player heap)
+kanobio_ovl		group	over(main_ovl),file("bios\mkbiokn.ovl")
+sonyabio_ovl	group	over(main_ovl),file("bios\mkbiosn.ovl")
+jaxbio_ovl		group	over(main_ovl),file("bios\mkbiojax.ovl")
+indianbio_ovl	group	over(main_ovl),file("bios\mkbioind.ovl")
+subzerobio_ovl	group	over(main_ovl),file("bios\mkbiosz.ovl")
+swatbio_ovl		group	over(main_ovl),file("bios\mkbioswt.ovl")
+liabio_ovl		group	over(main_ovl),file("bios\mkbiolia.ovl")
+robo1bio_ovl	group	over(main_ovl),file("bios\mkbiorb1.ovl")
+robo2bio_ovl	group	over(main_ovl),file("bios\mkbiorb2.ovl")
+laobio_ovl		group	over(main_ovl),file("bios\mkbiolao.ovl")
+tuskbio_ovl		group	over(main_ovl),file("bios\mkbiotk.ovl")
+sheevabio_ovl	group	over(main_ovl),file("bios\mkbiosg.ovl")
+shangbio_ovl	group	over(main_ovl),file("bios\mkbiost.ovl")
+lkangbio_ovl	group	over(main_ovl),file("bios\mkbiolk.ovl")
+
+	section	.biodata_l19,kanobio_ovl
+	section	.biodata_l1a,sonyabio_ovl
+	section	.biodata_l1b,jaxbio_ovl
+	section	.biodata_l1c,indianbio_ovl
+	section	.biodata_l1d,subzerobio_ovl
+	section	.biodata_l1e,swatbio_ovl
+	section	.biodata_l1f,liabio_ovl
+	section	.biodata_l20,robo1bio_ovl
+	section	.biodata_l21,robo2bio_ovl
+	section	.biodata_l22,laobio_ovl
+	section	.biodata_l23,tuskbio_ovl
+	section	.biodata_l24,sheevabio_ovl
+	section	.biodata_l25,shangbio_ovl
+	section	.biodata_l26,lkangbio_ovl
+
+;##################################################################################
+;Ending soverlays (Overlays over player heap)
+kanoend_ovl		group	over(main_ovl),file("endings\mkendkn.ovl")
+sonyaend_ovl	group	over(main_ovl),file("endings\mkendsn.ovl")
+jaxend_ovl		group	over(main_ovl),file("endings\mkendjax.ovl")
+indianend_ovl	group	over(main_ovl),file("endings\mkendind.ovl")
+subzeroend_ovl	group	over(main_ovl),file("endings\mkendsz.ovl")
+swatend_ovl		group	over(main_ovl),file("endings\mkendswt.ovl")
+liaend_ovl		group	over(main_ovl),file("endings\mkendlia.ovl")
+robo1end_ovl	group	over(main_ovl),file("endings\mkendrb1.ovl")
+robo2end_ovl	group	over(main_ovl),file("endings\mkendrb2.ovl")
+laoend_ovl		group	over(main_ovl),file("endings\mkendlao.ovl")
+tuskend_ovl		group	over(main_ovl),file("endings\mkendtk.ovl")
+sheevaend_ovl	group	over(main_ovl),file("endings\mkendsg.ovl")
+shangend_ovl	group	over(main_ovl),file("endings\mkendst.ovl")
+lkangend_ovl	group	over(main_ovl),file("endings\mkendlk.ovl")
+smokeend_ovl	group	over(main_ovl),file("endings\mkendsm.ovl")
+godsend_ovl	group	over(main_ovl),file("endings\mkendgd.ovl")
+
+	section	.enddata_l19,kanoend_ovl
+	section	.enddata_l1a,sonyaend_ovl
+	section	.enddata_l1b,jaxend_ovl
+	section	.enddata_l1c,indianend_ovl
+	section	.enddata_l1d,subzeroend_ovl
+	section	.enddata_l1e,swatend_ovl
+	section	.enddata_l1f,liaend_ovl
+	section	.enddata_l20,robo1end_ovl
+	section	.enddata_l21,robo2end_ovl
+	section	.enddata_l22,laoend_ovl
+	section	.enddata_l23,tuskend_ovl
+	section	.enddata_l24,sheevaend_ovl
+	section	.enddata_l25,shangend_ovl
+	section	.enddata_l26,lkangend_ovl
+	section	.enddata_l27,smokeend_ovl
+	section	.enddata_l28,godsend_ovl
+
+;##################################################################################
+	;
+	; These sections are created by the C compiler.  Specifying them
+	; here is not strictly necessary but does ensure that they appear
+	; in the correct order in the linked output file.
+	;
+
+	section	.rdata,text
+	section	.text,text
+	section	.data,text
+	section	.sdata,text
+
+	section	.sbss,bss	; The bss sections
+	section	.bss,bss
+
+	;
+	; Object files
+	;
+	include "obj\snsizes.o"
+	include "obj\snmain.o"
+	include	"obj\mkmain.o"
+	include "obj\mkinit.o"
+	include "obj\mksony.o"
+	include "obj\mkbt.o"
+	include "obj\mkpal.o"
+	include "obj\mkos.o"
+	include "obj\mkfile.o"
+	include "obj\mkutil.o"
+	include "obj\mkamode.o"
+	include "obj\moves.o"
+	include "obj\context.o"
+	include "obj\mkobj.o"
+	include "obj\mkbkgd.o"
+	include "obj\mkfx.o"
+	include "obj\mkglobal.o"
+	include "obj\mksel.o"
+	include "obj\mkbonus.o"
+	include "obj\mkscore.o"
+	include "obj\mktext.o"
+	include "obj\mkbug.o"
+	include "obj\mkend.o"
+	include "obj\mkmark.o"
+	include "obj\mkfatal.o"
+	include "obj\mkanimal.o"
+	include "obj\mkfriend.o"
+	include "obj\mkjoy.o"
+	include "obj\mkani.o"
+	include "obj\mkhstd.o"
+	include "obj\mkguys.o"
+	include "obj\mkdrone.o"
+	include "obj\mkboss.o"
+	include "obj\mkstk.o"
+	include "obj\mkreact.o"
+	include "obj\mkrepell.o"
+	include "obj\mkprop.o"
+	include "obj\mkzap.o"
+	include "obj\mkvs.o"
+	include "obj\mkbio.o"
+	include "obj\mkladder.o"
+	include "obj\mkbuyin.o"
+	include "obj\mksound.o"
+	include "obj\mkslam.o"
+	include "obj\mkblood.o"
+	include "obj\mkcanned.o"
+	include "obj\mkcombo.o"
+	include "obj\mkscombo.o"
+	include "obj\mkstat.o"
+	include "obj\valloc.o"
+;	include "obj\mkdiag.o"
+	include "obj\mkfade.o"
+	include "obj\mkr1.o"
+	include "obj\mkopt.o"
+	include "obj\mkselvic.o"
+	include "obj\loadaddr.o"
+	include "obj\heaparea.o"
+
+	;
+	; Bios Objects
+	;
+	;include "obj\mkbiokn.o"
+	;include "obj\mkbiosn.o"
+	;include "obj\mkbiojax.o"
+	;include "obj\mkbioind.o"
+	;include "obj\mkbiosz.o"
+	;include "obj\mkbioswt.o"
+	;include "obj\mkbiolia.o"
+	;include "obj\mkbiorb1.o"
+	;include "obj\mkbiorb2.o"
+	;include "obj\mkbiolao.o"
+	;include "obj\mkbiotsk.o"
+	;include "obj\mkbiosg.o"
+	;include "obj\mkbiost.o"
+	;include "obj\mkbiolk.o"
+	include "obj\mkbiodt.o"
+
+	;
+	; SUBWAY/STREET Bkgd
+	;
+	include "obj\mksbst.o"
+	include "obj\bkgdsbst.o"
+
+	;
+	; TEMPLE Bkgd
+	;
+	include "obj\mktemp.o"
+	include "obj\bkgdtemp.o"
+
+	;
+	; BRIGE Bkgd
+	;
+	include "obj\mkbrig.o"
+	include "obj\bkgdbrig.o"
+
+	;
+	; BALCONY Bkgd
+	;
+	;include "obj\mkbalc.o"
+	;include "obj\bkgdbalc.o"
+
+	;
+	; BELL Bkgd
+	;
+	include "obj\mkbell.o"
+	include "obj\bkgdbell.o"
+
+	;
+	; GRAVE Bkgd
+	;
+	include "obj\mkgrav.o"
+	include "obj\bkgdgrav.o"
+
+	;
+	; SOUL Bkgd
+	;
+	include "obj\mksoul.o"
+	include "obj\bkgdsoul.o"
+
+	;
+	; PIT Bkgd
+	;
+	include "obj\mkpit.o"
+	include "obj\bkgdpit.o"
+
+	;
+	; MOCKPIT Bkgd
+	;
+	include "obj\mkmock.o"
+	include "obj\bkgdmock.o"
+
+
+	;
+	; Portal Bkgd
+	;
+	include "obj\mkportal.o"
+	include "obj\bkgdport.o"
+
+	;
+	; SKEND STROY Bkgd
+	;
+	include "obj\mkskend.o"
+	include "obj\bkgdsken.o"
+
+
+	;
+	; BANK Bkgd
+	;
+	;include "obj\mkbank.o"
+	;include "obj\bkgdbank.o"
+
+	;
+	; CITY Bkgd
+	;
+	include "obj\mkcity.o"
+	include "obj\bkgdcity.o"
+
+	;
+	; Attract
+	;
+	include "obj\mkverse.o"
+	include "obj\mkhscore.o"
+;	include "obj\mkladdr.o"
+	include "obj\mkpsel.o"
+	include "obj\mkdteam.o"
+	include "obj\mkbuydt.o"
+	include "obj\mktitle.o"
+	include "obj\mkcoin.o"
+	include "obj\mkoption.o"
+	include "obj\mkstry2.o"
+	include "obj\mkstry3.o"
+	include "obj\mkknstry.o"
+	include "obj\mklkstry.o"
+	include "obj\mkszstry.o"
+
+	;
+	; Misc
+	;
+	include "obj\mkfight.o"
+	include "obj\mkbloodt.o"
+	include "obj\mktextdt.o"
+	include "obj\mknames.o"
+	include "obj\mkexplod.o"
+	include "obj\mkmarkdt.o"
+	include "obj\mkgrad.o"
+	include "obj\mkenddt.o"
+
+	;
+	; DEATH CODE
+	;
+;	include "obj\mkanimdt.o"
+;	include "obj\mkfriedt.o"
+;	include "obj\mkfatald.o"
+
+	;
+	; Sound
+	;
+	include "obj\psxsnd.o"
+	include "obj\psxcd.o"
+;	inclib "wesspcr.lib"
+	include "wesslib\obj\wessapi.o"
+	include "wesslib\obj\wessarc.o"
+	include "wesslib\obj\seqload.o"
+	include "wesslib\obj\psxspu.o"
+	include "wesslib\obj\psxcmd.o"
+	include "wesslib\obj\wessseq.o"
+	include "wesslib\obj\wessapit.o"
+	include "wesslib\obj\lcdload.o"
+	include "wesslib\obj\wessapim.o"
+	include "wesslib\obj\seqloadr.o"
+	include "wesslib\obj\wessglob.o"
+	include "wesslib\obj\wessbss.o"
+
+	;
+	; Library files
+	;
+;	include "\psx\lib\8mbyte.obj"
+	inclib "\_merge\libpatch\obj\sonylib.lib"
+
+	; The following line initializes the program counter register so
+	; that the downloader sets the entry point before the program
+	; is executed.  SN_ENTRY_POINT is defined in a module in
+	; ligsn.lib and clears the bss, sets up the heap, etc., before
+	; calling main().
+
+	regs	pc=__SN_ENTRY_POINT
+
+
+
+
+
+
+
+
+
+

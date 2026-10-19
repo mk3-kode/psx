@@ -1,0 +1,7 @@
+Files to place in this folder (PSX\COMPILER\) - see BUILDING.md, section 1.
+
+From the Psy-Q PlayStation SDK (Sony PS-X Development System Release 3.0,
+April 1994), its COMPILER folder:
+
+  CPPPSX.EXE     232292 bytes  sha256 97b42264dffafcf15ca3e6348d49a537f13d958d2d66292eeb1a1c155fe0c217
+      the C preprocessor (GNU CPP 2.6.0)

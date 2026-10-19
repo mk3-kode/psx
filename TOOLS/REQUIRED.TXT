@@ -1,0 +1,15 @@
+Files to place in this folder (TOOLS\) - see BUILDING.md, section 1.
+
+ASPSX.EXE and CPE2X.EXE are from the PlayStation Programmer Tool - Runtime
+Library Version 3.3 disc (1995). cc1 is gcc 2.6.3 for the PlayStation, Linux
+build (it runs through WSL on Windows, directly on Linux and in a container on
+macOS; see BUILDING.md), from gcc-2.6.3-psx.tar.gz, decompals/old-gcc release
+0.17, https://github.com/decompals/old-gcc/releases/download/0.17/gcc-2.6.3-psx.tar.gz
+(archive sha256 01e6e8c4933414ea3f8d8e3bc766a1f5fafd4fc0110e0b75d1f691bd791989b1).
+
+  ASPSX.EXE       60665 bytes  sha256 b52bf3d40a516333e679f18e9297883158e3015e8d97ac501e108b049617ce41
+      the disc's PSYQ\ASPSX.EXE (ASPSX 2.21); assembles the WESS library
+  cc1           2787604 bytes  sha256 f4391c56fe7c602a0287619cfc4c94a3abbea76b2a1d67a23bf15206f6ae50f2
+      compiles every C file
+  CPE2X.EXE       17720 bytes  sha256 777caca88327cd18d4f92b43439575c1759381690d49f14177805a94b8ecbef6
+      the disc's PSXGRAPH\BIN\CPE2X.EXE (CPE2X 1.5); writes MK3.EXE

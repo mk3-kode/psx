@@ -1,0 +1,3 @@
+# Store every file byte for byte: no line-ending conversion. The DOS tools
+# expect CR/LF sources, and the build is matched to retail byte for byte.
+* -text

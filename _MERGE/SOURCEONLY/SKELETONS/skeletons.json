@@ -1,0 +1,19 @@
+{
+ "sonylib": {
+  "dest": "_MERGE/LIBPATCH/obj/SONYLIB.OBJ",
+  "sections": {
+   "1": [
+    "MK3.EXE",
+    67244
+   ],
+   "2": [
+    "MK3.EXE",
+    488744
+   ],
+   "3": [
+    "MK3.EXE",
+    565140
+   ]
+  }
+ }
+}

@@ -1,0 +1,6 @@
+Files to place in this folder (PSX\INCLUDE\SYS\) - see BUILDING.md, section 1.
+
+From the Psy-Q PlayStation SDK (Sony PS-X Development System Release 3.0,
+April 1994), its INCLUDE\SYS folder:
+
+  TYPES.H         1337 bytes  sha256 294a2d59cd6b315589d6fa25f042bea35a8a3e6d52d3e1d261c8942ab8eafa34

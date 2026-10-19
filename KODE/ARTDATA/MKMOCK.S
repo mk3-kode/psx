@@ -1,0 +1,155 @@
+	opt	c+
+l26	group
+	xdef	mockpit_module
+	xref	BLACK_p
+	xref	RED_p
+	xref	SCORE_P
+	xref	WHITE_p
+	xref	baklst0
+	xref	baklst1
+	xref	baklst1_t
+	xref	baklst2
+	xref	baklst2_t
+	xref	baklst3
+	xref	baklst3_t
+	xref	baklst4
+	xref	baklst4_t
+	xref	baklst5
+	xref	baklst5_t
+	xref	baklst6
+	xref	baklst6_t
+	xref	baklst7
+	xref	baklst7_t
+	xref	baklst8
+	xref	baklst8_t
+	xref	baklst9
+	xref	bakmods
+	xref	bpal_black_P
+	xref	bpal_blue_P
+	xref	bpal_flash1_P
+	xref	bpal_flash2_P
+	xref	bpal_flash3_P
+	xref	bpal_red_P
+	xref	bpal_white_P
+	xref	calla_return
+	xref	check_only_t
+	xref	floor_code
+	xref	mockpit_CLT
+	xref	objlst
+	xref	objlst2
+	xref	objlst_t
+	xref	scrollx
+	xref	scrollx1
+	xref	scrollx2
+	xref	scrollx3
+	xref	scrollx4
+	xref	scrollx5
+	xref	scrollx6
+	xref	scrollx7
+	xref	scrollx8
+	xref	shadow_p1p2
+	xref	skew_7
+	xref	use_next_y
+	xref	use_worldtly
+	xref	use_worldtly_t
+	xref	worldtlx
+	xref	worldtlx1
+	xref	worldtlx1_t
+	xref	worldtlx2
+	xref	worldtlx2_t
+	xref	worldtlx3
+	xref	worldtlx3_t
+	xref	worldtlx4
+	xref	worldtlx4_t
+	xref	worldtlx5
+	xref	worldtlx5_t
+	xref	worldtlx6
+	xref	worldtlx6_t
+	xref	worldtlx7
+	xref	worldtlx7_t
+	xref	worldtlx8
+	xref	worldtlx8_t
+	xref	worldtlx_t
+	xref	worldtly
+	xref	worldtly1
+	xref	worldtly2
+	xref	worldtly3
+	xref	worldtly4
+	xref	worldtly5
+	xref	worldtly6
+	xref	worldtly7
+	xref	worldtly8
+	section	.bkgddata_l26
+L0_0
+	incbin	"c:\tmp\retail\BKGDS\BKGDMOCK.OVL",0,8
+	dw	L0_14
+	dw	L0_2e8
+	dw	mockpit_CLT
+L0_14
+	incbin	"c:\tmp\retail\BKGDS\BKGDMOCK.OVL",20,40
+L0_3c
+	incbin	"c:\tmp\retail\BKGDS\BKGDMOCK.OVL",60,8
+	dw	L0_50
+	dw	L0_2e8
+	dw	mockpit_CLT
+L0_50
+	incbin	"c:\tmp\retail\BKGDS\BKGDMOCK.OVL",80,20
+L0_64
+	incbin	"c:\tmp\retail\BKGDS\BKGDMOCK.OVL",100,8
+	dw	L0_78
+	dw	L0_2e8
+	dw	mockpit_CLT
+L0_78
+	incbin	"c:\tmp\retail\BKGDS\BKGDMOCK.OVL",120,190
+	dsb	2
+L0_138
+	incbin	"c:\tmp\retail\BKGDS\BKGDMOCK.OVL",312,8
+	dw	L0_14c
+	dw	L0_2e8
+	dw	mockpit_CLT
+L0_14c
+	incbin	"c:\tmp\retail\BKGDS\BKGDMOCK.OVL",332,410
+	dsb	2
+L0_2e8
+	incbin	"c:\tmp\retail\BKGDS\BKGDMOCK.OVL",744,470
+	dsb	2
+mockpit_module
+	incbin	"c:\tmp\retail\BKGDS\BKGDMOCK.OVL",1216,12
+	dw	calla_return
+	dw	L0_528
+	dw	L0_54c
+	dw	bakmods
+	dw	L0_138
+	incbin	"c:\tmp\retail\BKGDS\BKGDMOCK.OVL",1248,4
+	dw	L0_64
+	incbin	"c:\tmp\retail\BKGDS\BKGDMOCK.OVL",1256,4
+	dw	L0_3c
+	incbin	"c:\tmp\retail\BKGDS\BKGDMOCK.OVL",1264,4
+	dw	L0_0
+	incbin	"c:\tmp\retail\BKGDS\BKGDMOCK.OVL",1272,8
+	dw	L0_138
+	dw	worldtlx1
+	dw	L0_64
+	dw	worldtlx2
+	dw	L0_3c
+	dw	worldtlx3
+	dw	L0_0
+	dw	worldtlx4
+	incbin	"c:\tmp\retail\BKGDS\BKGDMOCK.OVL",1312,8
+L0_528
+	incbin	"c:\tmp\retail\BKGDS\BKGDMOCK.OVL",1320,36
+L0_54c
+	dw	baklst4
+	dw	(2+worldtlx4)
+	dw	baklst3
+	dw	(2+worldtlx3)
+	dw	baklst2
+	dw	(2+worldtlx2)
+	dw	baklst1
+	dw	(2+worldtlx1)
+	dw	objlst
+	dw	(2+worldtlx)
+	dw	objlst2
+	dw	(2+worldtlx)
+	incbin	"c:\tmp\retail\BKGDS\BKGDMOCK.OVL",1404,4
+	end

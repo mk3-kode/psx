@@ -1,0 +1,17 @@
+Files to place in this folder (PSX\INCLUDE\) - see BUILDING.md, section 1.
+
+From the Psy-Q PlayStation SDK (Sony PS-X Development System Release 3.0,
+April 1994), its INCLUDE folder. SYS\TYPES.H goes in the SYS subfolder
+(see SYS\REQUIRED.TXT).
+
+  ASM.H           2870 bytes  sha256 f99a3d43ad175d3bda14945865d68ccb5d80e9740ff95b634ee0a2f1a6d92afa
+  KERNEL.H        4321 bytes  sha256 9d69bf1b8bde57a376229fe53d17f0eb541c17e05d267e33499adb028d331b26
+  LIBCD.H         7688 bytes  sha256 15a005ba2071fb8bd4571b9c8be49d40ae64a00219388b32bbe47347cb2e5ae2
+  LIBETC.H        1698 bytes  sha256 bd1030fe46589c064eadcf5b56bca904d0a7930646211638c58e3d9c8c1949ad
+  LIBGPU.H       20980 bytes  sha256 1396280d4a5eac383f486c6b9384d73fb64f954160651b90f2bd61129d56ed69
+  LIBGS.H        11830 bytes  sha256 86a6638c8b7ad47e4999ee8722b582d156e99018f3288a7f79c5069bf7908f9e
+  LIBGTE.H       31684 bytes  sha256 5bac11333bed070adb473e4755782ee91f7680e661794b48ce43d970014eaee2
+  LIBSN.H         2148 bytes  sha256 31211374e24e7c20b214b1d8676e48462510e6de0014292b2b8a41682028337b
+  LIBSPU.H       17200 bytes  sha256 2e2bab155f3d314761ce2884b49a1511fd15e079fa01bf54a2a1b5b842c53bef
+  R3000.H         8015 bytes  sha256 eb30e9067f875988de4d03bde393f0cdeec58301c150ac6d06d732977470f8ed
+  STDIO.H          224 bytes  sha256 0cfbf7103e64256ccb3aeae4046a92e55a3eb8dc23196e0a45cb1900ac4a4f45

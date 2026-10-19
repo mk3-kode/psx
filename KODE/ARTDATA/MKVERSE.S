@@ -1,0 +1,1341 @@
+	opt	c+
+l29	group
+vs_c0	group
+vs_c1	group
+vs_c2	group
+vs_c3	group
+vs_c4	group
+vs_c5	group
+vs_c6	group
+vs_c7	group
+vs_c8	group
+vs_c14	group
+vs_c9	group
+vs_c10	group
+vs_c11	group
+vs_c12	group
+vs_c13	group
+	xdef	BATTLE
+	xdef	BATTLE0
+	xdef	BOX2
+	xdef	BURNS1
+	xdef	BURNV1
+	xdef	I_DRAGON
+	xdef	MKLIGHT1
+	xdef	STEELMODBMOD
+	xdef	a_mklight
+	xdef	a_vs_s
+	xdef	a_vs_v
+	xdef	battle_digits
+	xdef	ind_pieces
+	xdef	jax_pieces
+	xdef	kano_pieces
+	xdef	lao_pieces
+	xdef	lia_pieces
+	xdef	lk_pieces
+	xdef	robo1_pieces
+	xdef	robo2_pieces
+	xdef	sg_pieces
+	xdef	smoke_pieces
+	xdef	sonya_pieces
+	xdef	st_pieces
+	xdef	swat_pieces
+	xdef	symbol_table
+	xdef	sz_pieces
+	xdef	tusk_pieces
+	xdef	vs_anims
+	xdef	vs_module
+	xref	BLACK_p
+	xref	RED_p
+	xref	SCORE_P
+	xref	WHITE_p
+	xref	baklst0
+	xref	baklst1
+	xref	baklst1_t
+	xref	baklst2
+	xref	baklst2_t
+	xref	baklst3
+	xref	baklst3_t
+	xref	baklst4
+	xref	baklst4_t
+	xref	baklst5
+	xref	baklst5_t
+	xref	baklst6
+	xref	baklst6_t
+	xref	baklst7
+	xref	baklst7_t
+	xref	baklst8
+	xref	baklst8_t
+	xref	baklst9
+	xref	bakmods
+	xref	bpal_black_P
+	xref	bpal_blue_P
+	xref	bpal_flash1_P
+	xref	bpal_flash2_P
+	xref	bpal_flash3_P
+	xref	bpal_red_P
+	xref	bpal_white_P
+	xref	calla_return
+	xref	check_only_t
+	xref	dlists_bogus
+	xref	floor_code
+	xref	no_scroll
+	xref	objlst
+	xref	objlst2
+	xref	objlst_t
+	xref	scrollx
+	xref	scrollx1
+	xref	scrollx2
+	xref	scrollx3
+	xref	scrollx4
+	xref	scrollx5
+	xref	scrollx6
+	xref	scrollx7
+	xref	scrollx8
+	xref	shadow_p1p2
+	xref	skew_7
+	xref	use_next_y
+	xref	use_worldtly
+	xref	use_worldtly_t
+	xref	worldtlx
+	xref	worldtlx1
+	xref	worldtlx1_t
+	xref	worldtlx2
+	xref	worldtlx2_t
+	xref	worldtlx3
+	xref	worldtlx3_t
+	xref	worldtlx4
+	xref	worldtlx4_t
+	xref	worldtlx5
+	xref	worldtlx5_t
+	xref	worldtlx6
+	xref	worldtlx6_t
+	xref	worldtlx7
+	xref	worldtlx7_t
+	xref	worldtlx8
+	xref	worldtlx8_t
+	xref	worldtlx_t
+	xref	worldtly
+	xref	worldtly1
+	xref	worldtly2
+	xref	worldtly3
+	xref	worldtly4
+	xref	worldtly5
+	xref	worldtly6
+	xref	worldtly7
+	xref	worldtly8
+	section	.bkgddata_l29
+L0_0
+	dw	L0_4
+L0_4
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",4,36
+L0_28
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",40,512
+L0_228
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",552,258
+	dsb	2
+L0_32c
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",812,66
+	dsb	2
+L0_370
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",880,514
+	dsb	2
+L0_574
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",1396,256
+L0_674
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",1652,66
+	dsb	2
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",1720,514
+	dsb	2
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",2236,738
+	dsb	2
+L0_ba0
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",2976,110
+	dsb	2
+L0_c10
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",3088,68
+L0_c54
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",3156,58
+	dsb	2
+L0_c90
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",3216,122
+	dsb	2
+L0_d0c
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",3340,118
+	dsb	2
+L0_d84
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",3460,124
+L0_e00
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",3584,132
+L0_e84
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",3716,132
+L0_f08
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",3848,130
+	dsb	2
+L0_f8c
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",3980,132
+L0_1010
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",4112,118
+	dsb	2
+L0_1088
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",4232,122
+	dsb	2
+L0_1104
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",4356,128
+L0_1184
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",4484,132
+L0_1208
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",4616,128
+L0_1288
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",4744,514
+	dsb	2
+L0_148c
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",5260,132
+L0_1510
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",5392,132
+L0_1594
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",5524,128
+L0_1614
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",5652,258
+	dsb	2
+L0_1718
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",5912,68
+L0_175c
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",5980,514
+	dsb	2
+L0_1960
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",6496,258
+	dsb	2
+L0_1a64
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",6756,260
+L0_1b68
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",7016,68
+L0_1bac
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",7084,260
+L0_1cb0
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",7344,510
+	dsb	2
+L0_1eb0
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",7856,130
+	dsb	2
+L0_1f34
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",7988,68
+L0_1f78
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",8056,514
+	dsb	2
+L0_217c
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",8572,64
+L0_21bc
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",8636,260
+L0_22c0
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",8896,514
+	dsb	2
+L0_24c4
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",9412,64
+L0_2504
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",9476,68
+L0_2548
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",9544,508
+L0_2744
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",10052,64
+L0_2784
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",10116,260
+L0_2888
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",10376,68
+L0_28cc
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",10444,260
+L0_29d0
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",10704,514
+	dsb	2
+L0_2bd4
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",11220,68
+L0_2c18
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",11288,132
+L0_2c9c
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",11420,514
+	dsb	2
+L0_2ea0
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",11936,132
+L0_2f24
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",12068,68
+L0_2f68
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",12136,260
+L0_306c
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",12396,68
+L0_30b0
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",12464,582
+	dsb	2
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",13048,514
+	dsb	2
+L0_34fc
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",13564,260
+L0_3600
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",13824,260
+L0_3704
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",14084,68
+L0_3748
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",14152,514
+	dsb	2
+L0_394c
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",14668,68
+L0_3990
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",14736,508
+L0_3b8c
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",15244,68
+L0_3bd0
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",15312,258
+	dsb	2
+L0_3cd4
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",15572,256
+L0_3dd4
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",15828,68
+L0_3e18
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",15896,64
+L0_3e58
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",15960,260
+L0_3f5c
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",16220,260
+L0_4060
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",16480,260
+L0_4164
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",16740,260
+L0_4268
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",17000,130
+	dsb	2
+vs_anims
+a_mklight
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",17132,88
+MKLIGHT1
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",17220,12
+	dw	L0_1184
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",17236,228
+symbol_table
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",17464,40
+I_DRAGON
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",17504,12
+	dw	L0_c90
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",17520,12
+	dw	L0_e84
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",17536,12
+	dw	L0_1104
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",17552,12
+	dw	L0_1088
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",17568,12
+	dw	L0_f08
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",17584,12
+	dw	L0_e00
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",17600,12
+	dw	L0_d0c
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",17616,12
+	dw	L0_f8c
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",17632,12
+	dw	L0_d84
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",17648,12
+	dw	L0_1010
+BOX2
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",17664,12
+	dw	L0_c54
+a_vs_v
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",17680,56
+BURNS1
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",17736,12
+	dw	L0_1208
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",17752,168
+a_vs_s
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",17920,64
+BURNV1
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",17984,12
+	dw	L0_1208
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",18000,144
+battle_digits
+	dw	L0_4718
+	dw	L0_4728
+	dw	L0_4734
+	dw	L0_4740
+	dw	L0_474c
+	dw	L0_4758
+	dw	L0_4764
+	dw	L0_4770
+	dw	L0_477c
+	dw	L0_4788
+BATTLE
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",18184,12
+	dw	L0_c10
+BATTLE0
+L0_4718
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",18200,12
+	dw	L0_c10
+L0_4728
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",18216,12
+L0_4734
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",18228,12
+L0_4740
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",18240,12
+L0_474c
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",18252,12
+L0_4758
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",18264,12
+L0_4764
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",18276,12
+L0_4770
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",18288,12
+L0_477c
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",18300,12
+L0_4788
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",18312,12
+STEELMODBMOD
+L0_4794
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",18324,8
+	dw	L0_47a8
+	dw	L0_47d0
+	dw	L0_0
+L0_47a8
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",18344,40
+L0_47d0
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",18384,20
+vs_module
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",18404,12
+	dw	calla_return
+	dw	no_scroll
+	dw	dlists_bogus
+	dw	bakmods
+	dw	L0_4794
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",18436,1315
+	dsb	1
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",19752,265
+	dsb	3
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",20020,181
+	dsb	3
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",20204,958
+	dsb	2
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",21164,274
+	dsb	2
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",21440,205
+	dsb	3
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",21648,283
+	dsb	1
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",21932,286
+	dsb	2
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",22220,1041
+	dsb	3
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",23264,373
+	dsb	3
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",23640,397
+	dsb	3
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",24040,403
+	dsb	1
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",24444,394
+	dsb	2
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",24840,379
+	dsb	1
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",25220,103
+	dsb	1
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",25324,130
+	dsb	2
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",25456,341
+	dsb	3
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",25800,217
+	dsb	3
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",26020,229
+	dsb	3
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",26252,590
+	dsb	2
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",26844,590
+	dsb	2
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",27436,923
+	dsb	1
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",28360,454
+	dsb	2
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",28816,154
+	dsb	2
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",28972,187
+	dsb	1
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",29160,223
+	dsb	1
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",29384,593
+	dsb	3
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",29980,349
+	dsb	3
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",30332,373
+	dsb	3
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",30708,614
+	dsb	2
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",31324,211
+	dsb	1
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",31536,214
+	dsb	2
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",31752,199
+	dsb	1
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",31952,214
+	dsb	2
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",32168,413
+	dsb	3
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",32584,193
+	dsb	3
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",32780,175
+	dsb	1
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",32956,2390
+	dsb	2
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",35348,4430
+	dsb	2
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",39780,2209
+	dsb	3
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",41992,2185
+	dsb	3
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",44180,2182
+	dsb	2
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",46364,2197
+	dsb	3
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",48564,2197
+	dsb	3
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",50764,2191
+	dsb	1
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",52956,2215
+	dsb	1
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",55172,2191
+	dsb	1
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",57364,2173
+	dsb	3
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",59540,2215
+	dsb	1
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",61756,2209
+	dsb	3
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",63968,2206
+	dsb	2
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",66176,2221
+	dsb	3
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",68400,2182
+	dsb	2
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",70584,2191
+	dsb	1
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",72776,2197
+	dsb	3
+	incbin	"c:\tmp\retail\VS\MKVERSE.OVL",74976,2215
+	section	.vs_0
+sonya_pieces
+	incbin	"c:\tmp\retail\VS\VSSONYA.BIN",0,60
+	dw	L0_3cd4
+	incbin	"c:\tmp\retail\VS\VSSONYA.BIN",64,4
+	dw	L0_3cd4
+	incbin	"c:\tmp\retail\VS\VSSONYA.BIN",72,4
+	dw	L0_3cd4
+	incbin	"c:\tmp\retail\VS\VSSONYA.BIN",80,4
+	dw	L0_3cd4
+	incbin	"c:\tmp\retail\VS\VSSONYA.BIN",88,216
+	dw	L0_370
+	incbin	"c:\tmp\retail\VS\VSSONYA.BIN",308,20
+	dw	L0_370
+	incbin	"c:\tmp\retail\VS\VSSONYA.BIN",332,20
+	dw	L0_370
+	incbin	"c:\tmp\retail\VS\VSSONYA.BIN",356,20
+	dw	L0_370
+	incbin	"c:\tmp\retail\VS\VSSONYA.BIN",380,20
+	dw	L0_370
+	incbin	"c:\tmp\retail\VS\VSSONYA.BIN",404,20
+	dw	L0_370
+	incbin	"c:\tmp\retail\VS\VSSONYA.BIN",428,20
+	dw	L0_574
+	incbin	"c:\tmp\retail\VS\VSSONYA.BIN",452,20
+	dw	L0_574
+	incbin	"c:\tmp\retail\VS\VSSONYA.BIN",476,20
+	dw	L0_574
+	incbin	"c:\tmp\retail\VS\VSSONYA.BIN",500,20
+	dw	L0_574
+	incbin	"c:\tmp\retail\VS\VSSONYA.BIN",524,20
+	dw	L0_674
+	incbin	"c:\tmp\retail\VS\VSSONYA.BIN",548,20
+	dw	L0_674
+	incbin	"c:\tmp\retail\VS\VSSONYA.BIN",572,20
+	dw	L0_674
+	incbin	"c:\tmp\retail\VS\VSSONYA.BIN",596,20
+	dw	L0_674
+	incbin	"c:\tmp\retail\VS\VSSONYA.BIN",620,20
+	dw	L0_674
+	incbin	"c:\tmp\retail\VS\VSSONYA.BIN",644,20
+	dw	L0_674
+	incbin	"c:\tmp\retail\VS\VSSONYA.BIN",668,20
+	dw	L0_674
+	incbin	"c:\tmp\retail\VS\VSSONYA.BIN",692,2003
+	dsb	1
+	incbin	"c:\tmp\retail\VS\VSSONYA.BIN",2696,1681
+	dsb	3
+	incbin	"c:\tmp\retail\VS\VSSONYA.BIN",4380,719
+	dsb	1
+	incbin	"c:\tmp\retail\VS\VSSONYA.BIN",5100,1114
+	dsb	2
+	incbin	"c:\tmp\retail\VS\VSSONYA.BIN",6216,1426
+	dsb	2
+	incbin	"c:\tmp\retail\VS\VSSONYA.BIN",7644,614
+	dsb	2
+	incbin	"c:\tmp\retail\VS\VSSONYA.BIN",8260,786
+	dsb	2
+	incbin	"c:\tmp\retail\VS\VSSONYA.BIN",9048,633
+	dsb	3
+	incbin	"c:\tmp\retail\VS\VSSONYA.BIN",9684,193
+	dsb	3
+	incbin	"c:\tmp\retail\VS\VSSONYA.BIN",9880,769
+	dsb	3
+	incbin	"c:\tmp\retail\VS\VSSONYA.BIN",10652,589
+	dsb	3
+	incbin	"c:\tmp\retail\VS\VSSONYA.BIN",11244,151
+	dsb	1
+	incbin	"c:\tmp\retail\VS\VSSONYA.BIN",11396,541
+	dsb	3
+	incbin	"c:\tmp\retail\VS\VSSONYA.BIN",11940,877
+	dsb	3
+	incbin	"c:\tmp\retail\VS\VSSONYA.BIN",12820,274
+	section	.vs_1
+kano_pieces
+	incbin	"c:\tmp\retail\VS\VSKANO.BIN",0,44
+	dw	L0_3bd0
+	incbin	"c:\tmp\retail\VS\VSKANO.BIN",48,4
+	dw	L0_3bd0
+	incbin	"c:\tmp\retail\VS\VSKANO.BIN",56,4
+	dw	L0_3bd0
+	incbin	"c:\tmp\retail\VS\VSKANO.BIN",64,4
+	dw	L0_3bd0
+	incbin	"c:\tmp\retail\VS\VSKANO.BIN",72,4
+	dw	L0_3bd0
+	incbin	"c:\tmp\retail\VS\VSKANO.BIN",80,176
+	dw	L0_28
+	incbin	"c:\tmp\retail\VS\VSKANO.BIN",260,20
+	dw	L0_28
+	incbin	"c:\tmp\retail\VS\VSKANO.BIN",284,20
+	dw	L0_28
+	incbin	"c:\tmp\retail\VS\VSKANO.BIN",308,20
+	dw	L0_28
+	incbin	"c:\tmp\retail\VS\VSKANO.BIN",332,20
+	dw	L0_228
+	incbin	"c:\tmp\retail\VS\VSKANO.BIN",356,20
+	dw	L0_228
+	incbin	"c:\tmp\retail\VS\VSKANO.BIN",380,20
+	dw	L0_228
+	incbin	"c:\tmp\retail\VS\VSKANO.BIN",404,20
+	dw	L0_228
+	incbin	"c:\tmp\retail\VS\VSKANO.BIN",428,20
+	dw	L0_228
+	incbin	"c:\tmp\retail\VS\VSKANO.BIN",452,20
+	dw	L0_32c
+	incbin	"c:\tmp\retail\VS\VSKANO.BIN",476,20
+	dw	L0_32c
+	incbin	"c:\tmp\retail\VS\VSKANO.BIN",500,20
+	dw	L0_32c
+	incbin	"c:\tmp\retail\VS\VSKANO.BIN",524,20
+	dw	L0_32c
+	incbin	"c:\tmp\retail\VS\VSKANO.BIN",548,20
+	dw	L0_ba0
+	incbin	"c:\tmp\retail\VS\VSKANO.BIN",572,1891
+	dsb	1
+	incbin	"c:\tmp\retail\VS\VSKANO.BIN",2464,3694
+	dsb	2
+	incbin	"c:\tmp\retail\VS\VSKANO.BIN",6160,586
+	dsb	2
+	incbin	"c:\tmp\retail\VS\VSKANO.BIN",6748,967
+	dsb	1
+	incbin	"c:\tmp\retail\VS\VSKANO.BIN",7716,41
+	dsb	3
+	incbin	"c:\tmp\retail\VS\VSKANO.BIN",7760,1914
+	dsb	2
+	incbin	"c:\tmp\retail\VS\VSKANO.BIN",9676,3905
+	dsb	3
+	incbin	"c:\tmp\retail\VS\VSKANO.BIN",13584,223
+	dsb	1
+	incbin	"c:\tmp\retail\VS\VSKANO.BIN",13808,1357
+	dsb	3
+	incbin	"c:\tmp\retail\VS\VSKANO.BIN",15168,439
+	section	.vs_2
+ind_pieces
+	incbin	"c:\tmp\retail\VS\VSINDIAN.BIN",0,52
+	dw	L0_4268
+	incbin	"c:\tmp\retail\VS\VSINDIAN.BIN",56,4
+	dw	L0_4268
+	incbin	"c:\tmp\retail\VS\VSINDIAN.BIN",64,4
+	dw	L0_4268
+	incbin	"c:\tmp\retail\VS\VSINDIAN.BIN",72,4
+	dw	L0_4268
+	incbin	"c:\tmp\retail\VS\VSINDIAN.BIN",80,208
+	dw	L0_1f34
+	incbin	"c:\tmp\retail\VS\VSINDIAN.BIN",292,20
+	dw	L0_1f34
+	incbin	"c:\tmp\retail\VS\VSINDIAN.BIN",316,20
+	dw	L0_1f34
+	incbin	"c:\tmp\retail\VS\VSINDIAN.BIN",340,20
+	dw	L0_1f34
+	incbin	"c:\tmp\retail\VS\VSINDIAN.BIN",364,20
+	dw	L0_1f34
+	incbin	"c:\tmp\retail\VS\VSINDIAN.BIN",388,20
+	dw	L0_1eb0
+	incbin	"c:\tmp\retail\VS\VSINDIAN.BIN",412,20
+	dw	L0_1eb0
+	incbin	"c:\tmp\retail\VS\VSINDIAN.BIN",436,20
+	dw	L0_1eb0
+	incbin	"c:\tmp\retail\VS\VSINDIAN.BIN",460,20
+	dw	L0_1eb0
+	incbin	"c:\tmp\retail\VS\VSINDIAN.BIN",484,20
+	dw	L0_1f78
+	incbin	"c:\tmp\retail\VS\VSINDIAN.BIN",508,20
+	dw	L0_1f78
+	incbin	"c:\tmp\retail\VS\VSINDIAN.BIN",532,20
+	dw	L0_1f78
+	incbin	"c:\tmp\retail\VS\VSINDIAN.BIN",556,20
+	dw	L0_1f78
+	incbin	"c:\tmp\retail\VS\VSINDIAN.BIN",580,20
+	dw	L0_1f78
+	incbin	"c:\tmp\retail\VS\VSINDIAN.BIN",604,20
+	dw	L0_1f78
+	incbin	"c:\tmp\retail\VS\VSINDIAN.BIN",628,20
+	dw	L0_1f78
+	incbin	"c:\tmp\retail\VS\VSINDIAN.BIN",652,190
+	dsb	2
+	incbin	"c:\tmp\retail\VS\VSINDIAN.BIN",844,661
+	dsb	3
+	incbin	"c:\tmp\retail\VS\VSINDIAN.BIN",1508,202
+	dsb	2
+	incbin	"c:\tmp\retail\VS\VSINDIAN.BIN",1712,758
+	dsb	2
+	incbin	"c:\tmp\retail\VS\VSINDIAN.BIN",2472,697
+	dsb	3
+	incbin	"c:\tmp\retail\VS\VSINDIAN.BIN",3172,2570
+	dsb	2
+	incbin	"c:\tmp\retail\VS\VSINDIAN.BIN",5744,2782
+	dsb	2
+	incbin	"c:\tmp\retail\VS\VSINDIAN.BIN",8528,1533
+	dsb	3
+	incbin	"c:\tmp\retail\VS\VSINDIAN.BIN",10064,2683
+	dsb	1
+	incbin	"c:\tmp\retail\VS\VSINDIAN.BIN",12748,489
+	dsb	3
+	incbin	"c:\tmp\retail\VS\VSINDIAN.BIN",13240,274
+	dsb	2
+	incbin	"c:\tmp\retail\VS\VSINDIAN.BIN",13516,1613
+	dsb	3
+	incbin	"c:\tmp\retail\VS\VSINDIAN.BIN",15132,2407
+	section	.vs_3
+jax_pieces
+	incbin	"c:\tmp\retail\VS\VSJAX.BIN",0,20
+	dw	L0_148c
+	incbin	"c:\tmp\retail\VS\VSJAX.BIN",24,4
+	dw	L0_148c
+	incbin	"c:\tmp\retail\VS\VSJAX.BIN",32,96
+	dw	L0_1288
+	incbin	"c:\tmp\retail\VS\VSJAX.BIN",132,20
+	dw	L0_1594
+	incbin	"c:\tmp\retail\VS\VSJAX.BIN",156,20
+	dw	L0_1594
+	incbin	"c:\tmp\retail\VS\VSJAX.BIN",180,20
+	dw	L0_1510
+	incbin	"c:\tmp\retail\VS\VSJAX.BIN",204,20
+	dw	L0_1510
+	incbin	"c:\tmp\retail\VS\VSJAX.BIN",228,20
+	dw	L0_1510
+	incbin	"c:\tmp\retail\VS\VSJAX.BIN",252,8406
+	dsb	2
+	incbin	"c:\tmp\retail\VS\VSJAX.BIN",8660,2911
+	dsb	1
+	incbin	"c:\tmp\retail\VS\VSJAX.BIN",11572,886
+	dsb	2
+	incbin	"c:\tmp\retail\VS\VSJAX.BIN",12460,1991
+	dsb	1
+	incbin	"c:\tmp\retail\VS\VSJAX.BIN",14452,37
+	section	.vs_4
+sz_pieces
+	incbin	"c:\tmp\retail\VS\VSSZ.BIN",0,12
+	dw	L0_3600
+	incbin	"c:\tmp\retail\VS\VSSZ.BIN",16,4
+	dw	L0_3600
+	incbin	"c:\tmp\retail\VS\VSSZ.BIN",24,4
+	dw	L0_3600
+	incbin	"c:\tmp\retail\VS\VSSZ.BIN",32,4
+	dw	L0_3600
+	incbin	"c:\tmp\retail\VS\VSSZ.BIN",40,296
+	dw	L0_34fc
+	incbin	"c:\tmp\retail\VS\VSSZ.BIN",340,20
+	dw	L0_34fc
+	incbin	"c:\tmp\retail\VS\VSSZ.BIN",364,20
+	dw	L0_34fc
+	incbin	"c:\tmp\retail\VS\VSSZ.BIN",388,20
+	dw	L0_34fc
+	incbin	"c:\tmp\retail\VS\VSSZ.BIN",412,20
+	dw	L0_3748
+	incbin	"c:\tmp\retail\VS\VSSZ.BIN",436,20
+	dw	L0_3748
+	incbin	"c:\tmp\retail\VS\VSSZ.BIN",460,20
+	dw	L0_3748
+	incbin	"c:\tmp\retail\VS\VSSZ.BIN",484,20
+	dw	L0_3748
+	incbin	"c:\tmp\retail\VS\VSSZ.BIN",508,20
+	dw	L0_3748
+	incbin	"c:\tmp\retail\VS\VSSZ.BIN",532,20
+	dw	L0_3748
+	incbin	"c:\tmp\retail\VS\VSSZ.BIN",556,20
+	dw	L0_3748
+	incbin	"c:\tmp\retail\VS\VSSZ.BIN",580,20
+	dw	L0_3748
+	incbin	"c:\tmp\retail\VS\VSSZ.BIN",604,20
+	dw	L0_3704
+	incbin	"c:\tmp\retail\VS\VSSZ.BIN",628,20
+	dw	L0_3704
+	incbin	"c:\tmp\retail\VS\VSSZ.BIN",652,20
+	dw	L0_3704
+	incbin	"c:\tmp\retail\VS\VSSZ.BIN",676,20
+	dw	L0_3704
+	incbin	"c:\tmp\retail\VS\VSSZ.BIN",700,20
+	dw	L0_3704
+	incbin	"c:\tmp\retail\VS\VSSZ.BIN",724,20
+	dw	L0_3704
+	incbin	"c:\tmp\retail\VS\VSSZ.BIN",748,20
+	dw	L0_3704
+	incbin	"c:\tmp\retail\VS\VSSZ.BIN",772,542
+	dsb	2
+	incbin	"c:\tmp\retail\VS\VSSZ.BIN",1316,1845
+	dsb	3
+	incbin	"c:\tmp\retail\VS\VSSZ.BIN",3164,255
+	dsb	1
+	incbin	"c:\tmp\retail\VS\VSSZ.BIN",3420,1022
+	dsb	2
+	incbin	"c:\tmp\retail\VS\VSSZ.BIN",4444,511
+	dsb	1
+	incbin	"c:\tmp\retail\VS\VSSZ.BIN",4956,447
+	dsb	1
+	incbin	"c:\tmp\retail\VS\VSSZ.BIN",5404,4713
+	dsb	3
+	incbin	"c:\tmp\retail\VS\VSSZ.BIN",10120,1766
+	dsb	2
+	incbin	"c:\tmp\retail\VS\VSSZ.BIN",11888,1955
+	dsb	1
+	incbin	"c:\tmp\retail\VS\VSSZ.BIN",13844,2790
+	dsb	2
+	incbin	"c:\tmp\retail\VS\VSSZ.BIN",16636,2714
+	dsb	2
+	incbin	"c:\tmp\retail\VS\VSSZ.BIN",19352,94
+	dsb	2
+	incbin	"c:\tmp\retail\VS\VSSZ.BIN",19448,1043
+	section	.vs_5
+swat_pieces
+	incbin	"c:\tmp\retail\VS\VSSWAT.BIN",0,12
+	dw	L0_1bac
+	incbin	"c:\tmp\retail\VS\VSSWAT.BIN",16,4
+	dw	L0_1bac
+	incbin	"c:\tmp\retail\VS\VSSWAT.BIN",24,4
+	dw	L0_1bac
+	incbin	"c:\tmp\retail\VS\VSSWAT.BIN",32,176
+	dw	L0_1a64
+	incbin	"c:\tmp\retail\VS\VSSWAT.BIN",212,20
+	dw	L0_1a64
+	incbin	"c:\tmp\retail\VS\VSSWAT.BIN",236,20
+	dw	L0_1a64
+	incbin	"c:\tmp\retail\VS\VSSWAT.BIN",260,20
+	dw	L0_1cb0
+	incbin	"c:\tmp\retail\VS\VSSWAT.BIN",284,8
+	dw	L0_1cb0
+	incbin	"c:\tmp\retail\VS\VSSWAT.BIN",296,12
+	dw	L0_1cb0
+	incbin	"c:\tmp\retail\VS\VSSWAT.BIN",312,20
+	dw	L0_1cb0
+	incbin	"c:\tmp\retail\VS\VSSWAT.BIN",336,20
+	dw	L0_1cb0
+	incbin	"c:\tmp\retail\VS\VSSWAT.BIN",360,20
+	dw	L0_1b68
+	incbin	"c:\tmp\retail\VS\VSSWAT.BIN",384,20
+	dw	L0_1b68
+	incbin	"c:\tmp\retail\VS\VSSWAT.BIN",408,20
+	dw	L0_1b68
+	incbin	"c:\tmp\retail\VS\VSSWAT.BIN",432,20
+	dw	L0_1b68
+	incbin	"c:\tmp\retail\VS\VSSWAT.BIN",456,4189
+	dsb	3
+	incbin	"c:\tmp\retail\VS\VSSWAT.BIN",4648,329
+	dsb	3
+	incbin	"c:\tmp\retail\VS\VSSWAT.BIN",4980,1377
+	dsb	3
+	incbin	"c:\tmp\retail\VS\VSSWAT.BIN",6360,995
+	dsb	1
+	incbin	"c:\tmp\retail\VS\VSSWAT.BIN",7356,89
+	dsb	3
+	incbin	"c:\tmp\retail\VS\VSSWAT.BIN",7448,1539
+	dsb	1
+	incbin	"c:\tmp\retail\VS\VSSWAT.BIN",8988,3826
+	dsb	2
+	incbin	"c:\tmp\retail\VS\VSSWAT.BIN",12816,253
+	dsb	3
+	incbin	"c:\tmp\retail\VS\VSSWAT.BIN",13072,1948
+	section	.vs_6
+lia_pieces
+	incbin	"c:\tmp\retail\VS\VSLIA.BIN",0,76
+	dw	L0_2784
+	incbin	"c:\tmp\retail\VS\VSLIA.BIN",80,4
+	dw	L0_2784
+	incbin	"c:\tmp\retail\VS\VSLIA.BIN",88,104
+	dw	L0_29d0
+	incbin	"c:\tmp\retail\VS\VSLIA.BIN",196,20
+	dw	L0_29d0
+	incbin	"c:\tmp\retail\VS\VSLIA.BIN",220,20
+	dw	L0_29d0
+	incbin	"c:\tmp\retail\VS\VSLIA.BIN",244,20
+	dw	L0_29d0
+	incbin	"c:\tmp\retail\VS\VSLIA.BIN",268,20
+	dw	L0_29d0
+	incbin	"c:\tmp\retail\VS\VSLIA.BIN",292,20
+	dw	L0_2888
+	incbin	"c:\tmp\retail\VS\VSLIA.BIN",316,20
+	dw	L0_2888
+	incbin	"c:\tmp\retail\VS\VSLIA.BIN",340,20
+	dw	L0_2888
+	incbin	"c:\tmp\retail\VS\VSLIA.BIN",364,20
+	dw	L0_28cc
+	incbin	"c:\tmp\retail\VS\VSLIA.BIN",388,20
+	dw	L0_28cc
+	incbin	"c:\tmp\retail\VS\VSLIA.BIN",412,858
+	dsb	2
+	incbin	"c:\tmp\retail\VS\VSLIA.BIN",1272,854
+	dsb	2
+	incbin	"c:\tmp\retail\VS\VSLIA.BIN",2128,389
+	dsb	3
+	incbin	"c:\tmp\retail\VS\VSLIA.BIN",2520,958
+	dsb	2
+	incbin	"c:\tmp\retail\VS\VSLIA.BIN",3480,2081
+	dsb	3
+	incbin	"c:\tmp\retail\VS\VSLIA.BIN",5564,4034
+	dsb	2
+	incbin	"c:\tmp\retail\VS\VSLIA.BIN",9600,1711
+	dsb	1
+	incbin	"c:\tmp\retail\VS\VSLIA.BIN",11312,2091
+	section	.vs_7
+robo1_pieces
+	incbin	"c:\tmp\retail\VS\VSROBO1.BIN",0,60
+	dw	L0_4164
+	incbin	"c:\tmp\retail\VS\VSROBO1.BIN",64,4
+	dw	L0_4164
+	incbin	"c:\tmp\retail\VS\VSROBO1.BIN",72,4
+	dw	L0_4164
+	incbin	"c:\tmp\retail\VS\VSROBO1.BIN",80,4
+	dw	L0_4164
+	incbin	"c:\tmp\retail\VS\VSROBO1.BIN",88,4
+	dw	L0_4164
+	incbin	"c:\tmp\retail\VS\VSROBO1.BIN",96,4
+	dw	L0_4164
+	incbin	"c:\tmp\retail\VS\VSROBO1.BIN",104,4
+	dw	L0_4164
+	incbin	"c:\tmp\retail\VS\VSROBO1.BIN",112,128
+	dw	L0_306c
+	incbin	"c:\tmp\retail\VS\VSROBO1.BIN",244,20
+	dw	L0_306c
+	incbin	"c:\tmp\retail\VS\VSROBO1.BIN",268,20
+	dw	L0_306c
+	incbin	"c:\tmp\retail\VS\VSROBO1.BIN",292,20
+	dw	L0_306c
+	incbin	"c:\tmp\retail\VS\VSROBO1.BIN",316,20
+	dw	L0_306c
+	incbin	"c:\tmp\retail\VS\VSROBO1.BIN",340,20
+	dw	L0_306c
+	incbin	"c:\tmp\retail\VS\VSROBO1.BIN",364,20
+	dw	L0_30b0
+	incbin	"c:\tmp\retail\VS\VSROBO1.BIN",388,20
+	dw	L0_30b0
+	incbin	"c:\tmp\retail\VS\VSROBO1.BIN",412,20
+	dw	L0_30b0
+	incbin	"c:\tmp\retail\VS\VSROBO1.BIN",436,20
+	dw	L0_30b0
+	incbin	"c:\tmp\retail\VS\VSROBO1.BIN",460,20
+	dw	L0_30b0
+	incbin	"c:\tmp\retail\VS\VSROBO1.BIN",484,20
+	dw	L0_30b0
+	incbin	"c:\tmp\retail\VS\VSROBO1.BIN",508,20
+	dw	L0_30b0
+	incbin	"c:\tmp\retail\VS\VSROBO1.BIN",532,634
+	dsb	2
+	incbin	"c:\tmp\retail\VS\VSROBO1.BIN",1168,1189
+	dsb	3
+	incbin	"c:\tmp\retail\VS\VSROBO1.BIN",2360,1862
+	dsb	2
+	incbin	"c:\tmp\retail\VS\VSROBO1.BIN",4224,703
+	dsb	1
+	incbin	"c:\tmp\retail\VS\VSROBO1.BIN",4928,1717
+	dsb	3
+	incbin	"c:\tmp\retail\VS\VSROBO1.BIN",6648,4305
+	dsb	3
+	incbin	"c:\tmp\retail\VS\VSROBO1.BIN",10956,58
+	dsb	2
+	incbin	"c:\tmp\retail\VS\VSROBO1.BIN",11016,383
+	dsb	1
+	incbin	"c:\tmp\retail\VS\VSROBO1.BIN",11400,1373
+	dsb	3
+	incbin	"c:\tmp\retail\VS\VSROBO1.BIN",12776,1654
+	section	.vs_8
+robo2_pieces
+	incbin	"c:\tmp\retail\VS\VSROBO2.BIN",0,12
+	dw	L0_3e58
+	incbin	"c:\tmp\retail\VS\VSROBO2.BIN",16,4
+	dw	L0_3e58
+	incbin	"c:\tmp\retail\VS\VSROBO2.BIN",24,4
+	dw	L0_3e58
+	incbin	"c:\tmp\retail\VS\VSROBO2.BIN",32,4
+	dw	L0_3e58
+	incbin	"c:\tmp\retail\VS\VSROBO2.BIN",40,4
+	dw	L0_3e58
+	incbin	"c:\tmp\retail\VS\VSROBO2.BIN",48,176
+	dw	L0_2f24
+	incbin	"c:\tmp\retail\VS\VSROBO2.BIN",228,20
+	dw	L0_2f24
+	incbin	"c:\tmp\retail\VS\VSROBO2.BIN",252,20
+	dw	L0_2f24
+	incbin	"c:\tmp\retail\VS\VSROBO2.BIN",276,20
+	dw	L0_2f24
+	incbin	"c:\tmp\retail\VS\VSROBO2.BIN",300,20
+	dw	L0_2f24
+	incbin	"c:\tmp\retail\VS\VSROBO2.BIN",324,20
+	dw	L0_2f24
+	incbin	"c:\tmp\retail\VS\VSROBO2.BIN",348,20
+	dw	L0_2f24
+	incbin	"c:\tmp\retail\VS\VSROBO2.BIN",372,20
+	dw	L0_2f68
+	incbin	"c:\tmp\retail\VS\VSROBO2.BIN",396,20
+	dw	L0_2f68
+	incbin	"c:\tmp\retail\VS\VSROBO2.BIN",420,20
+	dw	L0_2f68
+	incbin	"c:\tmp\retail\VS\VSROBO2.BIN",444,20
+	dw	L0_2f68
+	incbin	"c:\tmp\retail\VS\VSROBO2.BIN",468,20
+	dw	L0_2f68
+	incbin	"c:\tmp\retail\VS\VSROBO2.BIN",492,1318
+	dsb	2
+	incbin	"c:\tmp\retail\VS\VSROBO2.BIN",1812,4686
+	dsb	2
+	incbin	"c:\tmp\retail\VS\VSROBO2.BIN",6500,3307
+	dsb	1
+	incbin	"c:\tmp\retail\VS\VSROBO2.BIN",9808,235
+	dsb	1
+	incbin	"c:\tmp\retail\VS\VSROBO2.BIN",10044,2753
+	dsb	3
+	incbin	"c:\tmp\retail\VS\VSROBO2.BIN",12800,1807
+	dsb	1
+	incbin	"c:\tmp\retail\VS\VSROBO2.BIN",14608,442
+	dsb	2
+	incbin	"c:\tmp\retail\VS\VSROBO2.BIN",15052,1030
+	section	.vs_14
+smoke_pieces
+	incbin	"c:\tmp\retail\VS\VSROBO3.BIN",0,12
+	dw	L0_4060
+	incbin	"c:\tmp\retail\VS\VSROBO3.BIN",16,4
+	dw	L0_4060
+	incbin	"c:\tmp\retail\VS\VSROBO3.BIN",24,4
+	dw	L0_4060
+	incbin	"c:\tmp\retail\VS\VSROBO3.BIN",32,4
+	dw	L0_4060
+	incbin	"c:\tmp\retail\VS\VSROBO3.BIN",40,4
+	dw	L0_4060
+	incbin	"c:\tmp\retail\VS\VSROBO3.BIN",48,176
+	dw	L0_3f5c
+	incbin	"c:\tmp\retail\VS\VSROBO3.BIN",228,20
+	dw	L0_3f5c
+	incbin	"c:\tmp\retail\VS\VSROBO3.BIN",252,20
+	dw	L0_3f5c
+	incbin	"c:\tmp\retail\VS\VSROBO3.BIN",276,20
+	dw	L0_3f5c
+	incbin	"c:\tmp\retail\VS\VSROBO3.BIN",300,20
+	dw	L0_3f5c
+	incbin	"c:\tmp\retail\VS\VSROBO3.BIN",324,20
+	dw	L0_2f24
+	incbin	"c:\tmp\retail\VS\VSROBO3.BIN",348,20
+	dw	L0_2f24
+	incbin	"c:\tmp\retail\VS\VSROBO3.BIN",372,20
+	dw	L0_2f24
+	incbin	"c:\tmp\retail\VS\VSROBO3.BIN",396,20
+	dw	L0_2f24
+	incbin	"c:\tmp\retail\VS\VSROBO3.BIN",420,20
+	dw	L0_2f24
+	incbin	"c:\tmp\retail\VS\VSROBO3.BIN",444,20
+	dw	L0_2f24
+	incbin	"c:\tmp\retail\VS\VSROBO3.BIN",468,20
+	dw	L0_2f24
+	incbin	"c:\tmp\retail\VS\VSROBO3.BIN",492,1318
+	dsb	2
+	incbin	"c:\tmp\retail\VS\VSROBO3.BIN",1812,4686
+	dsb	2
+	incbin	"c:\tmp\retail\VS\VSROBO3.BIN",6500,3307
+	dsb	1
+	incbin	"c:\tmp\retail\VS\VSROBO3.BIN",9808,235
+	dsb	1
+	incbin	"c:\tmp\retail\VS\VSROBO3.BIN",10044,2753
+	dsb	3
+	incbin	"c:\tmp\retail\VS\VSROBO3.BIN",12800,1807
+	dsb	1
+	incbin	"c:\tmp\retail\VS\VSROBO3.BIN",14608,442
+	dsb	2
+	incbin	"c:\tmp\retail\VS\VSROBO3.BIN",15052,1030
+	section	.vs_9
+lao_pieces
+	incbin	"c:\tmp\retail\VS\VSLAO.BIN",0,108
+	dw	L0_3e18
+	incbin	"c:\tmp\retail\VS\VSLAO.BIN",112,4
+	dw	L0_3e18
+	incbin	"c:\tmp\retail\VS\VSLAO.BIN",120,136
+	dw	L0_2548
+	incbin	"c:\tmp\retail\VS\VSLAO.BIN",260,20
+	dw	L0_2548
+	incbin	"c:\tmp\retail\VS\VSLAO.BIN",284,20
+	dw	L0_2548
+	incbin	"c:\tmp\retail\VS\VSLAO.BIN",308,20
+	dw	L0_2548
+	incbin	"c:\tmp\retail\VS\VSLAO.BIN",332,20
+	dw	L0_2548
+	incbin	"c:\tmp\retail\VS\VSLAO.BIN",356,20
+	dw	L0_2504
+	incbin	"c:\tmp\retail\VS\VSLAO.BIN",380,20
+	dw	L0_2504
+	incbin	"c:\tmp\retail\VS\VSLAO.BIN",404,20
+	dw	L0_2504
+	incbin	"c:\tmp\retail\VS\VSLAO.BIN",428,20
+	dw	L0_2504
+	incbin	"c:\tmp\retail\VS\VSLAO.BIN",452,20
+	dw	L0_2504
+	incbin	"c:\tmp\retail\VS\VSLAO.BIN",476,20
+	dw	L0_2504
+	incbin	"c:\tmp\retail\VS\VSLAO.BIN",500,20
+	dw	L0_2504
+	incbin	"c:\tmp\retail\VS\VSLAO.BIN",524,20
+	dw	L0_2744
+	incbin	"c:\tmp\retail\VS\VSLAO.BIN",548,20
+	dw	L0_2744
+	incbin	"c:\tmp\retail\VS\VSLAO.BIN",572,1637
+	dsb	3
+	incbin	"c:\tmp\retail\VS\VSLAO.BIN",2212,539
+	dsb	1
+	incbin	"c:\tmp\retail\VS\VSLAO.BIN",2752,7901
+	dsb	3
+	incbin	"c:\tmp\retail\VS\VSLAO.BIN",10656,1969
+	dsb	3
+	incbin	"c:\tmp\retail\VS\VSLAO.BIN",12628,373
+	dsb	3
+	incbin	"c:\tmp\retail\VS\VSLAO.BIN",13004,337
+	dsb	3
+	incbin	"c:\tmp\retail\VS\VSLAO.BIN",13344,1745
+	dsb	3
+	incbin	"c:\tmp\retail\VS\VSLAO.BIN",15092,1055
+	dsb	1
+	incbin	"c:\tmp\retail\VS\VSLAO.BIN",16148,385
+	section	.vs_10
+tusk_pieces
+	incbin	"c:\tmp\retail\VS\VSTUSK.BIN",0,92
+	dw	L0_217c
+	incbin	"c:\tmp\retail\VS\VSTUSK.BIN",96,4
+	dw	L0_217c
+	incbin	"c:\tmp\retail\VS\VSTUSK.BIN",104,120
+	dw	L0_22c0
+	incbin	"c:\tmp\retail\VS\VSTUSK.BIN",228,20
+	dw	L0_22c0
+	incbin	"c:\tmp\retail\VS\VSTUSK.BIN",252,20
+	dw	L0_22c0
+	incbin	"c:\tmp\retail\VS\VSTUSK.BIN",276,20
+	dw	L0_22c0
+	incbin	"c:\tmp\retail\VS\VSTUSK.BIN",300,20
+	dw	L0_22c0
+	incbin	"c:\tmp\retail\VS\VSTUSK.BIN",324,20
+	dw	L0_21bc
+	incbin	"c:\tmp\retail\VS\VSTUSK.BIN",348,20
+	dw	L0_21bc
+	incbin	"c:\tmp\retail\VS\VSTUSK.BIN",372,20
+	dw	L0_21bc
+	incbin	"c:\tmp\retail\VS\VSTUSK.BIN",396,20
+	dw	L0_21bc
+	incbin	"c:\tmp\retail\VS\VSTUSK.BIN",420,20
+	dw	L0_21bc
+	incbin	"c:\tmp\retail\VS\VSTUSK.BIN",444,20
+	dw	L0_24c4
+	incbin	"c:\tmp\retail\VS\VSTUSK.BIN",468,20
+	dw	L0_24c4
+	incbin	"c:\tmp\retail\VS\VSTUSK.BIN",492,1099
+	dsb	1
+	incbin	"c:\tmp\retail\VS\VSTUSK.BIN",1592,143
+	dsb	1
+	incbin	"c:\tmp\retail\VS\VSTUSK.BIN",1736,1614
+	dsb	2
+	incbin	"c:\tmp\retail\VS\VSTUSK.BIN",3352,5727
+	dsb	1
+	incbin	"c:\tmp\retail\VS\VSTUSK.BIN",9080,4931
+	dsb	1
+	incbin	"c:\tmp\retail\VS\VSTUSK.BIN",14012,2378
+	dsb	2
+	incbin	"c:\tmp\retail\VS\VSTUSK.BIN",16392,1969
+	dsb	3
+	incbin	"c:\tmp\retail\VS\VSTUSK.BIN",18364,542
+	section	.vs_11
+sg_pieces
+	incbin	"c:\tmp\retail\VS\VSSG.BIN",0,140
+	dw	L0_1614
+	incbin	"c:\tmp\retail\VS\VSSG.BIN",144,4
+	dw	L0_1614
+	incbin	"c:\tmp\retail\VS\VSSG.BIN",152,4
+	dw	L0_1614
+	incbin	"c:\tmp\retail\VS\VSSG.BIN",160,4
+	dw	L0_1614
+	incbin	"c:\tmp\retail\VS\VSSG.BIN",168,184
+	dw	L0_175c
+	incbin	"c:\tmp\retail\VS\VSSG.BIN",356,20
+	dw	L0_175c
+	incbin	"c:\tmp\retail\VS\VSSG.BIN",380,20
+	dw	L0_175c
+	incbin	"c:\tmp\retail\VS\VSSG.BIN",404,20
+	dw	L0_175c
+	incbin	"c:\tmp\retail\VS\VSSG.BIN",428,20
+	dw	L0_175c
+	incbin	"c:\tmp\retail\VS\VSSG.BIN",452,20
+	dw	L0_175c
+	incbin	"c:\tmp\retail\VS\VSSG.BIN",476,20
+	dw	L0_175c
+	incbin	"c:\tmp\retail\VS\VSSG.BIN",500,20
+	dw	L0_175c
+	incbin	"c:\tmp\retail\VS\VSSG.BIN",524,20
+	dw	L0_175c
+	incbin	"c:\tmp\retail\VS\VSSG.BIN",548,20
+	dw	L0_1718
+	incbin	"c:\tmp\retail\VS\VSSG.BIN",572,20
+	dw	L0_1718
+	incbin	"c:\tmp\retail\VS\VSSG.BIN",596,20
+	dw	L0_1718
+	incbin	"c:\tmp\retail\VS\VSSG.BIN",620,20
+	dw	L0_1718
+	incbin	"c:\tmp\retail\VS\VSSG.BIN",644,20
+	dw	L0_1718
+	incbin	"c:\tmp\retail\VS\VSSG.BIN",668,20
+	dw	L0_1718
+	incbin	"c:\tmp\retail\VS\VSSG.BIN",692,20
+	dw	L0_1718
+	incbin	"c:\tmp\retail\VS\VSSG.BIN",716,20
+	dw	L0_1960
+	incbin	"c:\tmp\retail\VS\VSSG.BIN",740,20
+	dw	L0_1960
+	incbin	"c:\tmp\retail\VS\VSSG.BIN",764,20
+	dw	L0_1960
+	incbin	"c:\tmp\retail\VS\VSSG.BIN",788,20
+	dw	L0_1960
+	incbin	"c:\tmp\retail\VS\VSSG.BIN",812,358
+	dsb	2
+	incbin	"c:\tmp\retail\VS\VSSG.BIN",1172,1366
+	dsb	2
+	incbin	"c:\tmp\retail\VS\VSSG.BIN",2540,2057
+	dsb	3
+	incbin	"c:\tmp\retail\VS\VSSG.BIN",4600,517
+	dsb	3
+	incbin	"c:\tmp\retail\VS\VSSG.BIN",5120,5967
+	dsb	1
+	incbin	"c:\tmp\retail\VS\VSSG.BIN",11088,2182
+	dsb	2
+	incbin	"c:\tmp\retail\VS\VSSG.BIN",13272,1982
+	dsb	2
+	incbin	"c:\tmp\retail\VS\VSSG.BIN",15256,1299
+	dsb	1
+	incbin	"c:\tmp\retail\VS\VSSG.BIN",16556,199
+	dsb	1
+	incbin	"c:\tmp\retail\VS\VSSG.BIN",16756,1485
+	dsb	3
+	incbin	"c:\tmp\retail\VS\VSSG.BIN",18244,274
+	dsb	2
+	incbin	"c:\tmp\retail\VS\VSSG.BIN",18520,193
+	dsb	3
+	incbin	"c:\tmp\retail\VS\VSSG.BIN",18716,710
+	dsb	2
+	incbin	"c:\tmp\retail\VS\VSSG.BIN",19428,491
+	dsb	1
+	incbin	"c:\tmp\retail\VS\VSSG.BIN",19920,138
+	dsb	2
+	incbin	"c:\tmp\retail\VS\VSSG.BIN",20060,1519
+	section	.vs_12
+lk_pieces
+	incbin	"c:\tmp\retail\VS\VSLKANG.BIN",0,92
+	dw	L0_2ea0
+	incbin	"c:\tmp\retail\VS\VSLKANG.BIN",96,4
+	dw	L0_2ea0
+	incbin	"c:\tmp\retail\VS\VSLKANG.BIN",104,4
+	dw	L0_2ea0
+	incbin	"c:\tmp\retail\VS\VSLKANG.BIN",112,128
+	dw	L0_2c9c
+	incbin	"c:\tmp\retail\VS\VSLKANG.BIN",244,20
+	dw	L0_2c9c
+	incbin	"c:\tmp\retail\VS\VSLKANG.BIN",268,20
+	dw	L0_2c9c
+	incbin	"c:\tmp\retail\VS\VSLKANG.BIN",292,20
+	dw	L0_2c9c
+	incbin	"c:\tmp\retail\VS\VSLKANG.BIN",316,20
+	dw	L0_2c9c
+	incbin	"c:\tmp\retail\VS\VSLKANG.BIN",340,20
+	dw	L0_2bd4
+	incbin	"c:\tmp\retail\VS\VSLKANG.BIN",364,20
+	dw	L0_2bd4
+	incbin	"c:\tmp\retail\VS\VSLKANG.BIN",388,20
+	dw	L0_2bd4
+	incbin	"c:\tmp\retail\VS\VSLKANG.BIN",412,20
+	dw	L0_2bd4
+	incbin	"c:\tmp\retail\VS\VSLKANG.BIN",436,20
+	dw	L0_2bd4
+	incbin	"c:\tmp\retail\VS\VSLKANG.BIN",460,20
+	dw	L0_2c18
+	incbin	"c:\tmp\retail\VS\VSLKANG.BIN",484,20
+	dw	L0_2c18
+	incbin	"c:\tmp\retail\VS\VSLKANG.BIN",508,20
+	dw	L0_2c18
+	incbin	"c:\tmp\retail\VS\VSLKANG.BIN",532,1277
+	dsb	3
+	incbin	"c:\tmp\retail\VS\VSLKANG.BIN",1812,2766
+	dsb	2
+	incbin	"c:\tmp\retail\VS\VSLKANG.BIN",4580,371
+	dsb	1
+	incbin	"c:\tmp\retail\VS\VSLKANG.BIN",4952,5635
+	dsb	1
+	incbin	"c:\tmp\retail\VS\VSLKANG.BIN",10588,874
+	dsb	2
+	incbin	"c:\tmp\retail\VS\VSLKANG.BIN",11464,845
+	dsb	3
+	incbin	"c:\tmp\retail\VS\VSLKANG.BIN",12312,805
+	dsb	3
+	incbin	"c:\tmp\retail\VS\VSLKANG.BIN",13120,966
+	dsb	2
+	incbin	"c:\tmp\retail\VS\VSLKANG.BIN",14088,544
+	section	.vs_13
+st_pieces
+	incbin	"c:\tmp\retail\VS\VSST.BIN",0,92
+	dw	L0_3b8c
+	incbin	"c:\tmp\retail\VS\VSST.BIN",96,4
+	dw	L0_3b8c
+	incbin	"c:\tmp\retail\VS\VSST.BIN",104,120
+	dw	L0_3990
+	incbin	"c:\tmp\retail\VS\VSST.BIN",228,20
+	dw	L0_3990
+	incbin	"c:\tmp\retail\VS\VSST.BIN",252,20
+	dw	L0_3990
+	incbin	"c:\tmp\retail\VS\VSST.BIN",276,20
+	dw	L0_3990
+	incbin	"c:\tmp\retail\VS\VSST.BIN",300,20
+	dw	L0_3990
+	incbin	"c:\tmp\retail\VS\VSST.BIN",324,20
+	dw	L0_394c
+	incbin	"c:\tmp\retail\VS\VSST.BIN",348,20
+	dw	L0_394c
+	incbin	"c:\tmp\retail\VS\VSST.BIN",372,20
+	dw	L0_394c
+	incbin	"c:\tmp\retail\VS\VSST.BIN",396,20
+	dw	L0_394c
+	incbin	"c:\tmp\retail\VS\VSST.BIN",420,20
+	dw	L0_394c
+	incbin	"c:\tmp\retail\VS\VSST.BIN",444,20
+	dw	L0_3dd4
+	incbin	"c:\tmp\retail\VS\VSST.BIN",468,20
+	dw	L0_3dd4
+	incbin	"c:\tmp\retail\VS\VSST.BIN",492,4149
+	dsb	3
+	incbin	"c:\tmp\retail\VS\VSST.BIN",4644,2147
+	dsb	1
+	incbin	"c:\tmp\retail\VS\VSST.BIN",6792,2687
+	dsb	1
+	incbin	"c:\tmp\retail\VS\VSST.BIN",9480,407
+	dsb	1
+	incbin	"c:\tmp\retail\VS\VSST.BIN",9888,3361
+	dsb	3
+	incbin	"c:\tmp\retail\VS\VSST.BIN",13252,1933
+	dsb	3
+	incbin	"c:\tmp\retail\VS\VSST.BIN",15188,139
+	dsb	1
+	incbin	"c:\tmp\retail\VS\VSST.BIN",15328,139
+	dsb	1
+	incbin	"c:\tmp\retail\VS\VSST.BIN",15468,106
+	end

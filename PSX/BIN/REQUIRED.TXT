@@ -1,0 +1,13 @@
+Files to place in this folder (PSX\BIN\) - see BUILDING.md, section 1.
+
+From the Psy-Q PlayStation SDK (Sony PS-X Development System Release 3.0,
+April 1994), its BIN folder:
+
+  ASMPSX.EXE     115072 bytes  sha256 8804da268575232018071e15287124ab8891b3cbf070b2b316c276de6d06b445
+      assembler for the .S sources (Psy-Q PSX 1.21)
+  ASPSX.EXE       56169 bytes  sha256 e368c1032ee1ea51bb55e55abdffbf7cb86852b89ba72360266c13b4327e2623
+      assembler for the game's C code
+  PSYLIB.EXE      45152 bytes  sha256 fdae3dea7cfd0891a4862e845398a7b028a51cede0d0f0f852d269e8a877bd98
+      librarian (packs the Sony library)
+  PSYLINK.EXE    104861 bytes  sha256 c50518655cd965bfc899098563e34ba7447a43a43cec64bae1104dae4b314bdd
+      linker

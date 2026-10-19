@@ -1,0 +1,24 @@
+# Tools the builder supplies (see BUILDING.md): only the folders and the
+# REQUIRED.TXT in each, which lists what goes there, are tracked
+/PSX/**
+!/PSX/**/
+!/PSX/**/REQUIRED.TXT
+/TOOLS/*
+!/TOOLS/REQUIRED.TXT
+
+# Build output
+/TMP/
+# the disc image (it holds retail data: audio tracks, licence sectors,
+# SCUS_942.01, MOVIE.STR, data files)
+/OUT/
+# objects: compiled, assembled, or filled from the retail disc
+/KODE/obj/
+/KODE/WESSLIB/OBJ/
+/_MERGE/LIBPATCH/obj/
+# the overlays psylink writes (file("...") in MK3.LNK)
+/KODE/attract/
+/KODE/bios/
+/KODE/bkgds/
+/KODE/endings/
+/KODE/overlay/
+/KODE/vs/
